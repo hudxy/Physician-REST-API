@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>CS 493 Final Project</title>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+  <h1>You are Authenticated!</h1>
+  <h5>Your JWT is : </h5>
+  <p>{{context.jwt}}</p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h5>Your associated ID for this API is: </h5>
+  <p>{{context.id}}</p>
+
+
+</body>
+</html>

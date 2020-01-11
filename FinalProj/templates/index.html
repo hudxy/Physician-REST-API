@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title>CS 493 Final Project</title>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+  <h1>To Log-in Use the Button to Authenticate with your Google Account!</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<button id="authen"><a href={{context.authorization_url}}>Authenticate!</a></button>
+
+
+
+</body>
+</html>
